@@ -28,7 +28,7 @@ int main() {
                 gerarRelatorio();
                 break;
             case 0:
-                printf("Saindo do sistema...\n");
+                printf("encerrando sistemasss...\n");
                 break;
             default:
                 printf("Opcao invalida!\n");
