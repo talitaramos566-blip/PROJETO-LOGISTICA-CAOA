@@ -1,0 +1,58 @@
+#include <stdio.h>
+
+// --- Declaração das Funções (Modularização) ---
+void registrarEntrada();
+void registrarSaida();
+void gerarRelatorio();
+
+int main() {
+    int opcao;
+
+    do {
+        printf("\n--- SISTEMA DE GESTÃO DE RACKS - CAOA (V2.0) ---\n");
+        printf("1. Registrar Entrada de Rack\n");
+        printf("2. Registrar Saida de Rack\n");
+        printf("3. Gerar Relatorio de Saldo\n");
+        printf("0. Sair\n");
+        printf("Escolha uma opcao: ");
+        scanf("%d", &opcao);
+
+        switch(opcao) {
+            case 1:
+                registrarEntrada();
+                break;
+            case 2:
+                registrarSaida();
+                break;
+            case 3:
+                gerarRelatorio();
+                break;
+            case 0:
+                printf("Saindo do sistema...\n");
+                break;
+            default:
+                printf("Opcao invalida!\n");
+        }
+    } while(opcao != 0);
+
+    return 0;
+}
+
+// --- Implementação das Funções ---
+void registrarEntrada() {
+    printf("\n--- Registro de Entrada ---\n");
+    // Lógica para registrar entrada será implementada aqui
+    printf("Entrada registrada com sucesso (Simulacao).\n");
+}
+
+void registrarSaida() {
+    printf("\n--- Registro de Saida ---\n");
+    // Lógica para registrar saida será implementada aqui
+    printf("Saida registrada com sucesso (Simulacao).\n");
+}
+
+void gerarRelatorio() {
+    printf("\n--- Relatorio de Saldo ---\n");
+    // Lógica para calcular e exibir saldo será implementada aqui
+    printf("Relatorio gerado (Simulacao): Saldo atual = 10 racks.\n");
+}
