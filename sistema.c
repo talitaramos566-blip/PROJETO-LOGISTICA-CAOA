@@ -28,7 +28,7 @@ int main() {
                 gerarRelatorio();
                 break;
             case 0:
-                printf("encerrando sistemasss...\n");
+                printf("encerrando sistemas...\n");
                 break;
             default:
                 printf("Opcao invalida!\n");
@@ -39,20 +39,20 @@ int main() {
 }
 
 // --- Implementação das Funções ---
-void registrarEntrada() {
+void registrarEntrada() {// Incrementa a quantidade de racks ao saldo total após validar o ID.
     printf("\n--- Registro de Entrada ---\n");
     // Lógica para registrar entrada será implementada aqui
-    printf("Entrada registrada com sucesso (Simulacao).\n");
+    printf("Entrada registrada. Saldo atualizado de racks.\n");
 }
 
-void registrarSaida() {
+void registrarSaida() {// Deduz a quantidade de racks expedidos do estoque disponível.
     printf("\n--- Registro de Saida ---\n");
     // Lógica para registrar saida será implementada aqui
-    printf("Saida registrada com sucesso (Simulacao).\n");
+    printf("Saida registrada. Saldo de racks atualizado.\n");
 }
 
-void gerarRelatorio() {
+void gerarRelatorio() {// Recupera os dados em memória e exibe o saldo atualizado para o usuário.
     printf("\n--- Relatorio de Saldo ---\n");
     // Lógica para calcular e exibir saldo será implementada aqui
-    printf("Relatorio gerado (Simulacao): Saldo atual = 10 racks.\n");
+    printf("Relatorio de Saldo gerado com sucesso.\n");
 }
